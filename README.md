@@ -3,7 +3,7 @@ Wilfa E-way Electric Scooter Speed Hack for Android
 
 Will set the speed to unlimited even so the settings page says ie 20 km/t or what ever is the legal max in your country.
 
-Just run patch_apk.sh to patch the original apk and install the resulting apk on your android phone.
+Just run patch_apk.sh to patch the original apk and install the resulting apk using your browser on your android phone by going to http://<your-ip>:8000
 
 To enable unlimited mode, goto settings and press confirm.
 
