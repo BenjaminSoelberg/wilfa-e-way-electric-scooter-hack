@@ -1,0 +1,10 @@
+3457a3458,3466
+> 
+> const/16 v0, 0xb
+> 
+> if-ne p0, v0, :cond_not_11
+> 
+> const/16 p1, 0x0
+> 
+> :cond_not_11
+> 
