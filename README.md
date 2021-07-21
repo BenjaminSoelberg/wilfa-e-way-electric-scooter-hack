@@ -16,7 +16,7 @@ https://www.boredpanda.com/reasons-why-wearing-helmet-is-important/
 
 To build the apk yourself:
 
-* Run '''patch_apk.sh''' to patch the original apk
+* Run ```patch_apk.sh``` to patch the original apk
 * Install the resulting apk using your browser on your android phone by going to http://your-local-ip:8000
 
-You can find your local ip on linux using '''ip addr''' or '''ifconfig'''
+You can find your local ip on linux using ```ip addr``` or ```ifconfig```
