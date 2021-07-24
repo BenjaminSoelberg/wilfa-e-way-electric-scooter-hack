@@ -13,7 +13,7 @@ Write me with your Android version and phone model when you have verifyed it is 
 
 Please enable Developer mode on your phone if you get errors like:
 
-** There was a problem parsing the package error **
+**There was a problem parsing the package error**
 
 * Head over to Settings – About phone – Build number and tap it 7 times to enable Developer options. 
 * Now head back to the Settings menu, where you should be able to find the Developer Options menu available for access.
