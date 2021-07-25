@@ -1,4 +1,4 @@
-# Wilfa E-way electric scooter hack for Android
+# Wilfa E-way electric scooter speed hack for Android
 
 ## Tested on Android
 * Huawei P10 model VTR-L29 running EMUI version 9.1.0
@@ -9,11 +9,21 @@ Write me with your Android version and phone model when you have verifyed it is 
 
 * E-way E350 which has a maximum speed of about 30 km/t
 
+## How to change the max speed
+
+Go to **Settings -> Speed settings**, select your max speed and press confirm.
+
+## How to install
+
+Direct install/sideloading by clicking on this link on your Android phone: 
+
+[https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.0.15_speed.apk](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.0.15_speed.apk)
+
+To enable unlimited mode, goto settings and press confirm.
+
 ## Enable develper mode
 
-Please enable Developer mode on your phone if you get errors like:
-
-**There was a problem parsing the package error**
+Please try and enable Developer mode on your phone if you get install errors:
 
 * Head over to Settings – About phone – Build number and tap it 7 times to enable Developer options. 
 * Now head back to the Settings menu, where you should be able to find the Developer Options menu available for access.
@@ -21,15 +31,16 @@ Please enable Developer mode on your phone if you get errors like:
 
 The system will now allow you to install apps from third-party sources, outside the bounds of the Google Play Store.
 
-## What you get
+## Known issues
 
-Will set the speed to **"unlimited"** even so the settings page says ie 20 km/t or what ever is the legal max in your country.
+**There was a problem parsing the package error**
+This seems to be a change in Android 11 regarding packed or misalligned resources.
+Fix is still pending, but install the apk on an older android until then.
 
-Direct install/sideloading by clicking on this link on your Android phone: 
+**App crashes when trying to change change speed setting**
 
-[https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.0.15_speed.apk](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.0.15_speed.apk)
-
-To enable unlimited mode, goto settings and press confirm.
+My guess is that the King Song server is either not working or sending bad data back.
+But I have fixed that in the latest release.
 
 ## WARNING
 
