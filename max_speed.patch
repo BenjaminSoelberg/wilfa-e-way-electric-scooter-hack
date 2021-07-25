@@ -1,6 +1,7 @@
+Only in EWay_Scooter_v1.0.15_speed: build
 diff -ru EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali
---- EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali	2021-07-25 14:53:46.423926506 +0200
-+++ EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali	2021-07-25 14:50:56.812237879 +0200
+--- EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali	2021-07-25 21:13:48.796388351 +0200
++++ EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali	2021-07-25 21:13:59.244368639 +0200
 @@ -41,27 +41,7 @@
      .line 161
      sget-object p2, Lcom/scooter/ewayscooter/Activity/MainActivity;->mBleService:Lcom/scooter/ewayscooter/Service/BleService;
@@ -63,8 +64,8 @@ diff -ru EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/Ti
      const-string p2, "Speed limit value"
  
 diff -ru EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali
---- EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali	2021-07-25 14:53:46.423926506 +0200
-+++ EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali	2021-07-25 14:50:56.812237879 +0200
+--- EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali	2021-07-25 21:13:48.796388351 +0200
++++ EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali	2021-07-25 21:13:59.244368639 +0200
 @@ -39,32 +39,9 @@
      .locals 0
  
@@ -131,8 +132,8 @@ diff -ru EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/Ti
  
      move-result-object p1
 diff -ru EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali
---- EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali	2021-07-25 14:53:46.427926500 +0200
-+++ EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali	2021-07-25 14:50:56.812237879 +0200
+--- EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali	2021-07-25 21:13:48.804388335 +0200
++++ EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali	2021-07-25 21:13:59.244368639 +0200
 @@ -315,53 +315,24 @@
  
      invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
