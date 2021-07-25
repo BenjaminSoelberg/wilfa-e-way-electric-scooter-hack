@@ -17,6 +17,8 @@ Go to **Settings -> Speed settings**, select your max speed and press **confirm*
 
 ## How to install
 
+*** Uninstall the original apk first if you have it installed ***
+
 Direct install/sideloading by clicking on this link on your Android phone: 
 
 [https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.0.15_speed.apk](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.0.15_speed.apk)
