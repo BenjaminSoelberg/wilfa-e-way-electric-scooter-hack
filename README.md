@@ -11,15 +11,13 @@ Write me with your Android version and phone model when you have verifyed it is 
 
 ## How to change the max speed
 
-Go to **Settings -> Speed settings**, select your max speed and press confirm.
+Go to **Settings -> Speed settings**, select your max speed and press **confirm**.
 
 ## How to install
 
 Direct install/sideloading by clicking on this link on your Android phone: 
 
 [https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.0.15_speed.apk](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.0.15_speed.apk)
-
-To enable unlimited mode, goto settings and press confirm.
 
 ## Enable develper mode
 
