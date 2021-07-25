@@ -1,13 +1,15 @@
 # Wilfa E-way electric scooter speed hack for Android
 
-## Tested on Android
+## Android test results
 * Huawei P10 model VTR-L29 running EMUI version 9.1.0
+* Huawei P40 running EMUI version 11
 
 Write me with your Android version and phone model when you have verifyed it is working and I'll update the above list.
 
 ## Electric Scooter test results
 
 * E-way E350 which has a maximum speed of about 30 km/t
+* E-way E500 which has a maximum speed of about 35 km/t
 
 ## How to change the max speed
 
@@ -32,13 +34,14 @@ The system will now allow you to install apps from third-party sources, outside 
 ## Known issues
 
 **There was a problem parsing the package error**
+
 This seems to be a change in Android 11 regarding packed or misalligned resources.
 Fix is still pending, but install the apk on an older android until then.
 
 **App crashes when trying to change change speed setting**
 
 My guess is that the King Song server is either not working or sending bad data back.
-But I have fixed that in the latest release.
+But I have worked around that in the latest release.
 
 ## WARNING
 
@@ -52,7 +55,7 @@ Always wear a helmet!
 
 To build the apk yourself (on linux):
 
-* Run ```patch_apk.sh``` to patch the original apk
+* Run ```./init.sh``` and then ```./apply_patch.sh``` to patch and build a new apk
 * Install the resulting apk using your browser on your android phone by going to http://your-local-ip:8000
 
 You can find your local ip on linux using ```ip addr``` or ```ifconfig```
