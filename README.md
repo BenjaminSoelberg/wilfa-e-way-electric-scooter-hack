@@ -3,6 +3,7 @@
 ## Android test results
 * Huawei P10 model VTR-L29 running EMUI version 9.1.0
 * Huawei P40 running EMUI version 11
+* HTC U11 running Android 9
 
 Write me with your Android version and phone model when you have verifyed it is working and I'll update the above list.
 
@@ -10,6 +11,7 @@ Write me with your Android version and phone model when you have verifyed it is 
 
 * E-way E350 which has a maximum speed of about 30 km/t
 * E-way E500 which has a maximum speed of about 35 km/t
+* E-way E600 which has a maximum speed of about 42 km/t
 
 ## How to change the max speed
 
