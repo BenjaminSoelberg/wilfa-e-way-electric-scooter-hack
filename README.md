@@ -19,7 +19,7 @@ Go to **Settings -> Speed settings**, select your max speed and press **confirm*
 
 ## How to install
 
-*** Uninstall the original apk first if you have it installed ***
+***-> Uninstall the original apk first if you have it installed <-***
 
 Direct install/sideloading by clicking on this link on your Android phone: 
 
@@ -35,18 +35,6 @@ Please try and enable Developer mode on your phone if you get install errors:
 
 The system will now allow you to install apps from third-party sources, outside the bounds of the Google Play Store.
 
-## Known issues
-
-**There was a problem parsing the package error**
-
-This seems to be a change in Android 11 regarding packed or misalligned resources.
-Fix is still pending, but install the apk on an older android until then.
-
-**App crashes when trying to change change speed setting**
-
-My guess is that the King Song server is either not working or sending bad data back.
-But I have worked around that in the latest release.
-
 ## WARNING
 
 Please use the scooter responsibly and only in legal places.
@@ -59,7 +47,7 @@ Always wear a helmet!
 
 To build the apk yourself (on linux):
 
-* Run ```./init.sh``` and then ```./apply_patch.sh``` to patch and build a new apk
+* Run `./init.sh` and then `./apply_patch.sh` to patch and build a new apk
 * Install the resulting apk using your browser on your android phone by going to http://your-local-ip:8000
 
-You can find your local ip on linux using ```ip addr``` or ```ifconfig```
+You can find your local ip on linux using `ip addr` or `ifconfig`
