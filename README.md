@@ -4,8 +4,7 @@
 * Huawei P10 model VTR-L29 running EMUI version 9.1.0
 * Huawei P40 running EMUI version 11
 * HTC U11 running Android 9
-
-Write me with your Android version and phone model when you have verifyed it is working and I'll update the above list.
+* Android Pixel 5 Emulator running API level 33
 
 ## Electric Scooter test results
 
@@ -43,7 +42,7 @@ Always wear a helmet!
 
 [https://www.boredpanda.com/reasons-why-wearing-helmet-is-important/](https://www.boredpanda.com/reasons-why-wearing-helmet-is-important/)
 
-## Build it your self
+## Build it yourself
 
 To build the apk yourself (on linux):
 
