@@ -1,5 +1,8 @@
 # Wilfa E-way electric scooter speed hack for Android
 
+## Works with the lates firmware version 1.26
+See [here](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/issues/5)
+
 ## Android test results
 * Huawei P10 model VTR-L29 running EMUI version 9.1.0
 * Huawei P40 running EMUI version 11
