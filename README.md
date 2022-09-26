@@ -2,6 +2,7 @@
 
 ## Works with the firmware version 1.26 and below
 See [here](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/issues/5)
+
 If you have problems with any/other firmwares then please create an issue [here](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/issues/new/choose)
 
 ## Android test results
