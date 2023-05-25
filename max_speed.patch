@@ -1,316 +1,268 @@
-Only in EWay_Scooter_v1.0.15_speed: build
-diff -ru EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali
---- EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali	2021-07-25 21:13:48.796388351 +0200
-+++ EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali	2021-07-25 21:13:59.244368639 +0200
-@@ -41,27 +41,7 @@
-     .line 161
-     sget-object p2, Lcom/scooter/ewayscooter/Activity/MainActivity;->mBleService:Lcom/scooter/ewayscooter/Service/BleService;
+Only in EWay_Scooter_v1.2.03_speed: build
+diff -ru EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean.smali EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean.smali
+--- EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean.smali	2023-05-19 17:13:16.880813553 +0200
++++ EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean.smali	2023-05-25 20:36:31.144032628 +0200
+@@ -54,13 +54,13 @@
+     .locals 1
  
--    invoke-static {}, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->access$100()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;
--
--    move-result-object p3
--
--    invoke-virtual {p3}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;->getData()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;
--
--    move-result-object p3
--
--    invoke-virtual {p3}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->getPrice()Ljava/util/List;
--
--    move-result-object p3
--
--    invoke-interface {p3, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
--
--    move-result-object p3
--
--    check-cast p3, Ljava/lang/String;
--
--    invoke-static {p3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
--
--    move-result p3
-+    move/16 p3, p1
+     .line 94
+-    iget-object v0, p0, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->country:Ljava/lang/String;
++    const-string v0, "Max speed"
  
-     const/16 p4, 0xb
+     return-object v0
+ .end method
  
-@@ -72,31 +52,6 @@
-     invoke-virtual {p2, p3}, Lcom/scooter/ewayscooter/Service/BleService;->addWriteData([B)V
+ .method public getMaximum()Ljava/util/List;
+-    .locals 1
++    .locals 2
+     .annotation system Ldalvik/annotation/Signature;
+         value = {
+             "()",
+@@ -70,14 +70,35 @@
+         }
+     .end annotation
  
-     .line 162
--    invoke-static {}, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->access$100()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;
--
--    move-result-object p2
--
--    invoke-virtual {p2}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;->getData()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;
--
--    move-result-object p2
--
--    invoke-virtual {p2}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->getPrice()Ljava/util/List;
--
--    move-result-object p2
--
--    invoke-interface {p2, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
--
--    move-result-object p1
--
--    check-cast p1, Ljava/lang/String;
--
--    invoke-static {p1}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
--
--    move-result-object p1
--
--    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
--
--    move-result p1
+-    .line 102
+-    iget-object v0, p0, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->maximum:Ljava/util/List;
++    new-instance v0, Ljava/util/ArrayList;
++
++    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
++
++    const-string v1, "20"
++
++    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
++
++    const-string v1, "22"
++
++    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
++
++    const-string v1, "23"
++
++    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
++
++    const-string v1, "25"
++
++    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
++
++    const-string v1, "62"
++
++    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+ 
+     return-object v0
+ .end method
+ 
+ .method public getPrice()Ljava/util/List;
+-    .locals 1
++    .locals 2
+     .annotation system Ldalvik/annotation/Signature;
+         value = {
+             "()",
+@@ -87,8 +108,29 @@
+         }
+     .end annotation
+ 
+-    .line 110
+-    iget-object v0, p0, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->price:Ljava/util/List;
++    new-instance v0, Ljava/util/ArrayList;
++
++    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
++
++    const-string v1, "4"
++
++    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
++
++    const-string v1, "1"
++
++    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
++
++    const-string v1, "3"
++
++    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
++
++    const-string v1, "2"
++
++    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
++
++    const-string v1, "0"
++
++    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+ 
+     return-object v0
+ .end method
+diff -ru EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Fragment/CarManagerOneFrgm$4.smali EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Fragment/CarManagerOneFrgm$4.smali
+--- EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Fragment/CarManagerOneFrgm$4.smali	2023-05-19 17:13:16.896814084 +0200
++++ EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Fragment/CarManagerOneFrgm$4.smali	2023-05-25 20:34:27.907774899 +0200
+@@ -86,7 +86,7 @@
+     goto :goto_0
+ 
+     :cond_0
+-    const-string p2, "Speed limit 20km/h"
++    const-string p2, "20km/h"
+ 
+     .line 502
+     invoke-static {p3, p2}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+@@ -94,7 +94,7 @@
+     goto :goto_0
+ 
+     :cond_1
+-    const-string p2, "Speed limit 23km/h"
++    const-string p2, "23km/h"
+ 
+     .line 499
+     invoke-static {p3, p2}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+@@ -102,7 +102,7 @@
+     goto :goto_0
+ 
+     :cond_2
+-    const-string p2, "Speed limit 25km/h"
++    const-string p2, "25km/h"
+ 
+     .line 496
+     invoke-static {p3, p2}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+@@ -110,7 +110,7 @@
+     goto :goto_0
+ 
+     :cond_3
+-    const-string p2, "Speed limit 22km/h"
++    const-string p2, "22km/h"
+ 
+     .line 490
+     invoke-static {p3, p2}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+@@ -118,7 +118,7 @@
+     goto :goto_0
+ 
+     :cond_4
+-    const-string p2, ""
++    const-string p2, "Unlimited"
+ 
+     .line 493
+     invoke-static {p3, p2}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+diff -ru EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali
+--- EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali	2023-05-19 17:13:16.896814084 +0200
++++ EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$4.smali	2023-05-25 20:36:24.244016607 +0200
+@@ -121,7 +121,7 @@
+     goto :goto_0
+ 
+     :cond_0
+-    const-string p1, "Speed limit 20km/h"
++    const-string p1, "20km/h"
+ 
+     .line 184
+     invoke-static {p2, p1}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+@@ -129,7 +129,7 @@
+     goto :goto_0
+ 
+     :cond_1
+-    const-string p1, "Speed limit 23km/h"
++    const-string p1, "23km/h"
+ 
+     .line 181
+     invoke-static {p2, p1}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+@@ -137,7 +137,7 @@
+     goto :goto_0
+ 
+     :cond_2
+-    const-string p1, "Speed limit 25km/h"
++    const-string p1, "25km/h"
+ 
+     .line 178
+     invoke-static {p2, p1}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+@@ -145,7 +145,7 @@
+     goto :goto_0
+ 
+     :cond_3
+-    const-string p1, "Speed limit 22km/h"
++    const-string p1, "22km/h"
+ 
+     .line 172
+     invoke-static {p2, p1}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+@@ -153,7 +153,7 @@
+     goto :goto_0
+ 
+     :cond_4
+-    const-string p1, ""
++    const-string p1, "Unlimited"
+ 
+     .line 175
+     invoke-static {p2, p1}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+diff -ru EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali
+--- EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali	2023-05-19 17:13:16.896814084 +0200
++++ EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali	2023-05-25 20:36:25.200018817 +0200
+@@ -65,7 +65,7 @@
+ 
+     move-result p2
+ 
+-    const-string p3, ""
++    const-string p3, "Unlimited"
+ 
+     const-string p4, "Speed limit value"
+ 
+@@ -90,7 +90,7 @@
+     goto :goto_0
+ 
+     :cond_0
+-    const-string p2, "Speed limit 20km/h"
++    const-string p2, "20km/h"
+ 
+     .line 381
+     invoke-static {p4, p2}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+@@ -98,7 +98,7 @@
+     goto :goto_0
+ 
+     :cond_1
+-    const-string p2, "Speed limit 23km/h"
++    const-string p2, "23km/h"
+ 
+     .line 378
+     invoke-static {p4, p2}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+@@ -106,7 +106,7 @@
+     goto :goto_0
+ 
+     :cond_2
+-    const-string p2, "Speed limit 25km/h"
++    const-string p2, "25km/h"
+ 
+     .line 375
+     invoke-static {p4, p2}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+@@ -114,7 +114,7 @@
+     goto :goto_0
+ 
+     :cond_3
+-    const-string p2, "Speed limit 22km/h"
++    const-string p2, "22km/h"
+ 
+     .line 369
+     invoke-static {p4, p2}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->commitString(Ljava/lang/String;Ljava/lang/String;)V
+diff -ru EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali
+--- EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali	2023-05-19 17:13:16.900814216 +0200
++++ EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali	2023-05-25 20:39:19.152471012 +0200
+@@ -1358,7 +1358,7 @@
  
      const-string p2, "Speed limit value"
  
-diff -ru EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali
---- EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali	2021-07-25 21:13:48.796388351 +0200
-+++ EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment$6.smali	2021-07-25 21:13:59.244368639 +0200
-@@ -39,32 +39,9 @@
-     .locals 0
+-    const-string p3, ""
++    const-string p3, "Unlimited"
  
-     .line 310
--    invoke-static {}, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->access$100()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;
--
--    move-result-object p2
--
--    invoke-virtual {p2}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;->getData()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;
--
--    move-result-object p2
--
--    invoke-virtual {p2}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->getPrice()Ljava/util/List;
--
--    move-result-object p2
--
--    invoke-interface {p2, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
--
--    move-result-object p2
--
--    check-cast p2, Ljava/lang/String;
--
--    invoke-static {p2}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
--
--    move-result-object p2
--
--    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
--
--    move-result p2
--
-+    
-+move/16 p2, p1
-+    
-     const-string p3, "Speed limit value"
+     invoke-static {p2, p3}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
  
-     if-eqz p2, :cond_4
-@@ -140,28 +117,6 @@
+@@ -1521,7 +1521,7 @@
  
-     const/16 p3, 0xb
+     const-string v0, "Speed limit value"
  
--    invoke-static {}, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->access$100()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;
--
--    move-result-object p4
--
--    invoke-virtual {p4}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;->getData()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;
--
--    move-result-object p4
--
--    invoke-virtual {p4}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->getPrice()Ljava/util/List;
--
--    move-result-object p4
--
--    invoke-interface {p4, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
--
--    move-result-object p1
--
--    check-cast p1, Ljava/lang/String;
--
--    invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
--
--    move-result p1
--
-     invoke-static {p3, p1}, Lcom/scooter/ewayscooter/Utils/ConstantBle;->scooterSet(II)[B
- 
-     move-result-object p1
-diff -ru EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali
---- EWay_Scooter_v1.0.15_original/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali	2021-07-25 21:13:48.804388335 +0200
-+++ EWay_Scooter_v1.0.15_speed/smali/com/scooter/ewayscooter/Fragment/TimeFragment.smali	2021-07-25 21:13:59.244368639 +0200
-@@ -315,53 +315,24 @@
- 
-     invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
- 
--    .line 359
--    :goto_0
--    :try_start_1
--    sget-object p1, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->checkVersionLoginBean:Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;
--
--    invoke-virtual {p1}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;->getData()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;
--
--    move-result-object p1
--
--    invoke-virtual {p1}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->getMaximum()Ljava/util/List;
--
--    move-result-object p1
--
--    invoke-interface {p1}, Ljava/util/List;->size()I
--
--    move-result p1
--
--    if-ge v2, p1, :cond_3
--
--    .line 360
-+    .line 364
-     iget-object p1, p0, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->sppedsettingItems:Ljava/util/ArrayList;
- 
--    sget-object v0, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->checkVersionLoginBean:Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;
--
--    invoke-virtual {v0}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;->getData()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;
-+    const-string v0, "Unlimited"
- 
--    move-result-object v0
--
--    invoke-virtual {v0}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->getMaximum()Ljava/util/List;
-+    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
- 
--    move-result-object v0
-+    const-string v0, "22 km/h"
- 
--    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-+    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
- 
--    move-result-object v0
-+    const-string v0, "25 km/h"
- 
-     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
--    :try_end_1
--    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
- 
--    add-int/lit8 v2, v2, 0x1
--
--    goto :goto_0
-+    const-string v0, "23 km/h"
- 
--    .line 364
--    :catch_1
--    iget-object p1, p0, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->sppedsettingItems:Ljava/util/ArrayList;
-+    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
- 
-     const-string v0, "20 km/h"
- 
-@@ -564,16 +535,9 @@
- 
-     invoke-direct {v0, v1, v2}, Lcom/bigkoo/pickerview/builder/OptionsPickerBuilder;-><init>(Landroid/content/Context;Lcom/bigkoo/pickerview/listener/OnOptionsSelectListener;)V
- 
--    sget-object v1, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->checkVersionLoginBean:Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;
--
-     .line 184
--    invoke-virtual {v1}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;->getData()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;
- 
--    move-result-object v1
--
--    invoke-virtual {v1}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->getCountry()Ljava/lang/String;
--
--    move-result-object v1
-+    const-string v1, "Speed selection"
- 
-     invoke-virtual {v0, v1}, Lcom/bigkoo/pickerview/builder/OptionsPickerBuilder;->setTitleText(Ljava/lang/String;)Lcom/bigkoo/pickerview/builder/OptionsPickerBuilder;
- 
-@@ -689,45 +653,26 @@
-     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
- 
-     .line 208
--    :goto_0
--    sget-object v0, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->checkVersionLoginBean:Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;
--
--    invoke-virtual {v0}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;->getData()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;
--
--    move-result-object v0
--
--    invoke-virtual {v0}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->getMaximum()Ljava/util/List;
- 
--    move-result-object v0
--
--    invoke-interface {v0}, Ljava/util/List;->size()I
--
--    move-result v0
+-    const-string v1, ""
 +    const-string v1, "Unlimited"
  
--    if-ge v3, v0, :cond_0
--
--    .line 209
--    iget-object v0, p0, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->sppedsettingItems:Ljava/util/ArrayList;
--
--    sget-object v1, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->checkVersionLoginBean:Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;
--
--    invoke-virtual {v1}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;->getData()Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;
-+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+     invoke-static {v0, v1}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
  
--    move-result-object v1
-+    const-string v1, "22 km/h"
+diff -ru EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Utils/HttpParameterUtil.smali EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Utils/HttpParameterUtil.smali
+--- EWay_Scooter_v1.2.03_original/smali/com/scooter/ewayscooter/Utils/HttpParameterUtil.smali	2023-05-19 17:13:16.920814881 +0200
++++ EWay_Scooter_v1.2.03_speed/smali/com/scooter/ewayscooter/Utils/HttpParameterUtil.smali	2023-05-22 21:31:41.405632556 +0200
+@@ -125,6 +125,8 @@
+ .method public appoperate(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Handler;)V
+     .locals 8
  
--    invoke-virtual {v1}, Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean$DataBean;->getMaximum()Ljava/util/List;
-+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
++    return-void
++
+     .line 1719
+     sget-object v1, Lcom/scooter/ewayscooter/Utils/ConstantURL;->APPOPERATE:Ljava/lang/String;
  
--    move-result-object v1
-+    const-string v1, "25 km/h"
- 
--    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
- 
--    move-result-object v1
-+    const-string v1, "23 km/h"
- 
-     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
- 
--    add-int/lit8 v3, v3, 0x1
-+    const-string v1, "20 km/h"
- 
--    goto :goto_0
-+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
- 
-     .line 212
-     :cond_0
-@@ -863,9 +808,6 @@
- 
-     .line 240
-     :sswitch_1
--    sget-object p1, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->checkVersionLoginBean:Lcom/scooter/ewayscooter/Bean/CheckVersionLoginBean;
--
--    if-eqz p1, :cond_0
- 
-     .line 241
-     invoke-direct {p0}, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->initSpeedPicker()V
-@@ -877,34 +819,6 @@
- 
-     goto :goto_0
- 
--    :cond_0
--    const-string p1, ""
--
--    const-string v0, "key_location_lng"
--
--    .line 244
--    invoke-static {v0, p1}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
--
--    move-result-object v0
--
--    const-string v1, "key_location_lat"
--
--    .line 245
--    invoke-static {v1, p1}, Lcom/scooter/ewayscooter/Utils/PreferenceUtil;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
--
--    move-result-object p1
--
--    .line 246
--    invoke-static {}, Lcom/scooter/ewayscooter/Utils/HttpParameterUtil;->getInstance()Lcom/scooter/ewayscooter/Utils/HttpParameterUtil;
--
--    move-result-object v1
--
--    iget-object v2, p0, Lcom/scooter/ewayscooter/Fragment/TimeFragment;->mHandler:Lcom/scooter/ewayscooter/Fragment/TimeFragment$MyHandler;
--
--    invoke-virtual {v1, v0, p1, v2}, Lcom/scooter/ewayscooter/Utils/HttpParameterUtil;->postGetCountry(Ljava/lang/String;Ljava/lang/String;Landroid/os/Handler;)V
--
--    goto :goto_0
--
-     .line 257
-     :sswitch_2
-     new-instance p1, Landroid/content/Intent;

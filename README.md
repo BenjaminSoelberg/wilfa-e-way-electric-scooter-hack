@@ -1,7 +1,6 @@
 # Wilfa E-way electric scooter speed hack for Android
 
 ## Works with the firmware version 1.26 and below
-See [here](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/issues/5)
 
 If you have problems with any/other firmwares then please create an issue [here](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/issues/new/choose)
 
@@ -27,17 +26,7 @@ Go to **Settings -> Speed settings**, select your max speed and press **confirm*
 
 Direct install/sideloading by clicking on this link on your Android phone: 
 
-[https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.0.15_speed.apk](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.0.15_speed.apk)
-
-## Enable develper mode
-
-Please try and enable Developer mode on your phone if you get install errors:
-
-* Head over to Settings – About phone – Build number and tap it 7 times to enable Developer options. 
-* Now head back to the Settings menu, where you should be able to find the Developer Options menu available for access.
-* Scroll down within the Developer Options menu and enable the toggle switch for Allow apps from Unknown Sources right next to it.
-
-The system will now allow you to install apps from third-party sources, outside the bounds of the Google Play Store.
+[https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.2.03_speed.apk](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/raw/main/EWay_Scooter_v1.2.03_speed.apk)
 
 ## WARNING
 
