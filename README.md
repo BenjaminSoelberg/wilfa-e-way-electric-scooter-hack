@@ -11,12 +11,14 @@ If you have problems with any/other firmwares then please create an issue [here]
 * Huawei P40 running EMUI version 11
 * HTC U11 running Android 9
 * Android Pixel 5 Emulator running API level 33
+* Asus Zenfone 9 running Android 13
 
 ## Electric Scooter test results
 
 * E-way E350 which has a maximum speed of about 30 km/t
 * E-way E500 which has a maximum speed of about 35 km/t
 * E-way E600 which has a maximum speed of about 42 km/t
+* E-way E-6060FRS which has a maximum speed of about 35 km/t
 
 ## How to change the max speed
 
