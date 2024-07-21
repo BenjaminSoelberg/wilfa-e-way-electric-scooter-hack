@@ -4,6 +4,8 @@
 
 ## If you have firmware version 1.31 then try and downgrade using my [patched version of KingSong SoftTuner](https://github.com/BenjaminSoelberg/kingsong-soft-tuner-hack) app for android
 
+## I need access to a scooter with firmware 1.31 to fix that version too. If you want this version fixes then please lend me a scooter to work on. I live in Copenhagen, Denmark. 
+
 If you have problems with any/other firmwares then please create an issue [here](https://github.com/BenjaminSoelberg/wilfa-e-way-electric-scooter-hack/issues/new/choose)
 
 ## Android test results
