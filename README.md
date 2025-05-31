@@ -1,5 +1,7 @@
 # Wilfa E-way electric scooter speed hack for Android
 
+# NO LONGER MAINTAINED
+
 ## Works with the firmware version 1.26 and below
 
 ## If you have firmware version 1.31 then try and downgrade using my [patched version of KingSong SoftTuner](https://github.com/BenjaminSoelberg/kingsong-soft-tuner-hack) app for android
